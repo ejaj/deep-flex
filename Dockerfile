@@ -1,16 +1,17 @@
 FROM tensorflow/tensorflow:2.12.0-gpu
 
 # Update package repositories
-RUN apt-get update -y
+RUN apt-get update
 
 # Upgrade pip
 RUN /usr/bin/python3 -m pip install --upgrade pip
 
+RUN apt-get install -y texlive-full
 # Install system dependencies
 RUN apt-get install -y ffmpeg libsm6 libxext6 python3-tk x11-apps git
 
 # Install Python packages
-RUN pip3 install bootstrap-py opencv-python matplotlib pandas seaborn tqdm plotly imageio scikit-image scikit-learn tensorflow-addons focal-loss tensorflow-datasets keras-applications keras-preprocessing keras-segmentation keras-tuner tables protobuf==3.20.* plyfile
+RUN pip3 install bootstrap-py opencv-python matplotlib pandas seaborn deepchem tqdm plotly imageio scikit-image scikit-learn tensorflow-addons focal-loss tensorflow-datasets keras-applications keras-preprocessing keras-segmentation keras-tuner tables protobuf==3.20.* plyfile
 
 # Create a non-root user
 ARG USERNAME=kazi

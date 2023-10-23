@@ -27,6 +27,14 @@ docker run --gpus all  -d -t --name deep_flex \
 --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
 --volume="/etc/localtime:/etc/localtime:ro" \
 --volume="/etc/timezone:/etc/timezone:ro" \
+--volume="/tmp:/tmp" \
 --entrypoint /bin/bash \
 --user 1000:1000 \
 deep_flex:5
+
+
+# Start TensorBoard within the Docker container
+docker exec -d deep_flex tensorboard --logdir=/home/kazi/Works/Projects/DeepFlex/logs
+
+# Display a message indicating TensorBoard is running
+echo "TensorBoard is running in the deep_flex container. You can access it from your host machine's web browser."
