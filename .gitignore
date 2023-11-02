@@ -383,3 +383,7 @@ pip-selfcheck.json
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,django,python,virtualenv
 
 .jupyter_ystore.db
+fcnet/fcnet-tox21
+fcnet/fcnet-tox21-dropout
+hp-optimization/fcnet-func-d-1024-hidden-50-lr-0.001000-n_epochs-10-batch_size-100-weight_pos-True
+hp-optimization/fcnet-func-d-1024-hidden-50-lr-0.001000-n_epochs-45-batch_size-100-weight_pos-True

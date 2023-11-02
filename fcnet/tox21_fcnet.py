@@ -64,7 +64,7 @@ with tf.name_scope("summaries"):
     tf.summary.scalar("loss", l)
     merged = tf.summary.merge_all()
 
-train_writer = tf.summary.FileWriter('/tmp/fcnet-tox21',
+train_writer = tf.summary.FileWriter('fcnet-tox21',
                                      tf.get_default_graph())
 
 N = train_X.shape[0]
