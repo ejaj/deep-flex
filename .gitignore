@@ -388,3 +388,4 @@ fcnet/fcnet-tox21-dropout
 hp-optimization/fcnet-func-d-1024-hidden-50-lr-0.001000-n_epochs-10-batch_size-100-weight_pos-True
 hp-optimization/fcnet-func-d-1024-hidden-50-lr-0.001000-n_epochs-45-batch_size-100-weight_pos-True
 convolutional-nn/data/cats-dogs
+rnn/data
