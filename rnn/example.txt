@@ -1,0 +1,4 @@
+This is an example file.
+It contains some lines of text.
+Each line is separated by a newline character.
+The content of this file will be read by the _read_words function.
